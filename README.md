@@ -2,6 +2,12 @@
 
 Instructions to recreate:
 ```
+# To run from scratch
+git clone git@github.com:jesuisunananas/TRMLabsTakeHome_ArjunRewari.git
+rm -rf evidence
+rm output.json scans.db
+```
+```
 Create a .env file with Gemini API key... GEMINI_API_KEY = abcd...
 mkdir -p evidence
 touch output.json
@@ -74,7 +80,7 @@ What I would do with more time:
 
 - It would be cool to explore on chain verification to verify that a wallet is a scam wallet.
 
-- I would also want to try out different models and see which one would work best for this kind of task, especially with sites that require a much longer context/actions with more than 3 layers of actions.
+- I would also want to try out different models and see which one would work best for this kind of task, especially with sites that require a much longer context/actions with more than 3 layers of actions. It would also be interesting to see how to make this output more consistent across runs.
 
 - If I had more time I would also like to explore using a message queue rather than the current SQLite polling loop because this would work better at scale. Right now my script acts as both the manager and the worker, so a message queue could be used to decouple these.
 
