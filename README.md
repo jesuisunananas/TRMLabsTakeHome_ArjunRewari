@@ -4,6 +4,7 @@ Instructions to recreate:
 ```
 # To run from scratch
 git clone git@github.com:jesuisunananas/TRMLabsTakeHome_ArjunRewari.git
+cd TRMLabsTakeHome_ArjunRewari
 rm -rf evidence
 rm output.json scans.db
 ```
