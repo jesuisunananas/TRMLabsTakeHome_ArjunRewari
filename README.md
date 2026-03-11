@@ -3,8 +3,8 @@
 Instructions to recreate:
 ```
 # To run from scratch
-git clone git@github.com:jesuisunananas/TRMLabsTakeHome_ArjunRewari.git
-cd TRMLabsTakeHome_ArjunRewari
+git clone git@github.com:jesuisunananas/Fraud_Detection_Agent.git
+cd Fraud_Detection_Agent
 rm -rf evidence
 rm output.json scans.db
 ```
@@ -13,14 +13,14 @@ Create a .env file with Gemini API key... GEMINI_API_KEY = abcd...
 mkdir -p evidence
 touch output.json
 touch scans.db
-docker build -t trm-crypto-agent .
+docker build -t crypto-agent .
 docker run --rm -it \
   --env-file .env \
   -v "$(pwd)/agent.py:/app/agent.py" \
   -v "$(pwd)/output.json:/app/output.json" \
   -v "$(pwd)/evidence:/app/evidence" \
   -v "$(pwd)/scans.db:/app/scans.db" \
-  trm-crypto-agent
+  crypto-agent
   ```
 
 System Design and Architecture Overview:
