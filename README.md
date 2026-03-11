@@ -1,4 +1,4 @@
-# TRMLabsTakeHome_ArjunRewari
+# Fraud Detection Agent
 
 Instructions to recreate:
 ```
